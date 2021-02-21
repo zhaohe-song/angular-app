@@ -1,0 +1,6 @@
+<div *ngIf="dish">
+  <img src={{dish.image}} alt={{dish.name}} />
+  <h1>{{dish.name | uppercase}}</h1>
+  <p>{{dish.description}}</p>
+</div>
+<button (click)="goBack()">Go back to menu</button>
